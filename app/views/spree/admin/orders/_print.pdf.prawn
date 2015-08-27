@@ -5,6 +5,8 @@ require 'prawn/layout'
 font @font_face
 
 im = Rails.application.assets.find_asset(Spree::PrintInvoice::Config[:print_invoice_logo_path])
+print 'ISPIS1111'
+print logo_scale
 image im.filename , :at => [0,720], :scale => logo_scale
 
 fill_color "E99323"
@@ -39,14 +41,14 @@ else
 end
 
 
-render :partial => "address"
+render :partial => "spree/admin/orders/address"
 
 move_down 30
 
-render :partial => "line_items_box"
+render :partial => "spree/admin/orders/line_items_box"
 
 move_down 8
 
 # Footer
-render :partial => "footer"
+render :partial => "spree/admin/orders/footer"
 
