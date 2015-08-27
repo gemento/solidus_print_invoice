@@ -7,14 +7,14 @@ require 'spree_print_invoice/version'
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_print_invoice'
-  s.version     = '1.0.2'
+  s.version     = SpreePrintInvoice.version
   s.summary     = 'Print invoices and slips from Spree Commerce'
   s.description = s.summary
   s.required_ruby_version = '>= 1.9.3'
 
-  s.author       = 'Ars Futura (based on: Spree Commerce'
+  s.author       = 'Spree Commerce'
   s.email        = 'gems@spreecommerce.com'
-  s.homepage     = 'https://github.com/arsfutura/solidus_comments'
+  s.homepage     = 'https://github.com/spree-contrib/spree_print_invoice'
   s.license      = 'BSD-3'
 
   s.files        = `git ls-files`.split("\n")
@@ -23,10 +23,9 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_runtime_dependency 'prawn', '~> 1.0.0'
-  s.add_runtime_dependency "solidus_core", [">= 1.0.0.pre", "< 2"]
-
   s.add_dependency "solidus_api", [">= 1.0.0.pre", "< 2"]
   s.add_dependency "solidus_backend", [">= 1.0.0.pre", "< 2"]
+  s.add_dependency "solidus_core", [">= 1.0.0.pre", "< 2"]
 
   s.add_development_dependency 'capybara', '~> 2.4.4'
   s.add_development_dependency 'selenium-webdriver', '>= 2.41'
