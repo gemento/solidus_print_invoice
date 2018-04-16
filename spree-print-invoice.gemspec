@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.version     = SpreePrintInvoice.version
   s.summary     = 'Print invoices and slips from Spree Commerce'
   s.description = s.summary
-  s.required_ruby_version = '>= 1.9.3'
+  s.required_ruby_version = '>= 2.1.0'
 
   s.author       = 'Spree Commerce'
   s.email        = 'gems@spreecommerce.com'
@@ -23,23 +23,23 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_runtime_dependency 'prawn', '~> 1.0.0'
-  s.add_dependency "solidus_api", [">= 1.0.0.pre", "< 2"]
-  s.add_dependency "solidus_backend", [">= 1.0.0.pre", "< 2"]
-  s.add_dependency "solidus_core", [">= 1.0.0.pre", "< 2"]
+  s.add_dependency "solidus_api", '~> 2.5.0.beta1'
+  s.add_dependency "solidus_backend", '~> 2.5.0.beta1'
+  s.add_dependency "solidus_core", '~> 2.5.0.beta1'
 
-  s.add_development_dependency 'capybara', '~> 2.4.4'
-  s.add_development_dependency 'selenium-webdriver', '>= 2.41'
-  s.add_development_dependency 'poltergeist', '~> 1.5.0'
-  s.add_development_dependency 'factory_girl', '~> 4.4'
-  s.add_development_dependency 'rspec-rails', '~> 3.1.0'
-  s.add_development_dependency 'simplecov', '~> 0.9.0'
-  s.add_development_dependency 'sqlite3', '~> 1.3.10'
-  s.add_development_dependency 'database_cleaner', '~> 1.2.0'
-  s.add_development_dependency 'coffee-rails', '~> 4.0.0'
-  s.add_development_dependency 'sass-rails', '~> 4.0.0'
-  s.add_development_dependency 'pdf-inspector', '~> 1.1.0'
-  s.add_development_dependency 'ffaker', '>= 1.25.0'
-  s.add_development_dependency 'guard-rspec', '>= 4.2.0'
-  s.add_development_dependency 'pry-rails', '>= 0.3.0'
-  s.add_development_dependency 'rubocop', '>= 0.24.1'
+  s.add_development_dependency 'capybara'
+  s.add_development_dependency 'selenium-webdriver'
+  s.add_development_dependency 'poltergeist'
+  s.add_development_dependency 'factory_girl'
+  s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency 'simplecov'
+  s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'database_cleaner'
+  s.add_development_dependency 'coffee-rails'
+  s.add_development_dependency 'sass-rails'
+  s.add_development_dependency 'pdf-inspector'
+  s.add_development_dependency 'ffaker'
+  s.add_development_dependency 'guard-rspec'
+  s.add_development_dependency 'pry-rails'
+  s.add_development_dependency 'rubocop'
 end
